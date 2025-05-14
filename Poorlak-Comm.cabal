@@ -1,0 +1,34 @@
+cabal-version:      3.0
+name:               Poorlak-Comm
+version:            0.1.0.0
+-- synopsis:
+-- description:
+license:            BSD-3-Clause
+license-file:       LICENSE
+author:             S3NP41-v
+maintainer:         s3np41v@gmail.com
+-- copyright:
+category:           Network
+build-type:         Simple
+extra-doc-files:    CHANGELOG.md
+-- extra-source-files:
+
+common warnings
+    ghc-options: -Wall
+
+executable PComm
+    import:           warnings
+    main-is:          Main.hs
+    -- other-modules:
+    -- other-extensions:
+    build-depends:    
+        base ^>=4.18.2.1
+      , crypton
+      , bytestring
+      , time
+      , random
+      , directory
+      , optparse-applicative
+
+    hs-source-dirs:   app
+    default-language: Haskell2010
